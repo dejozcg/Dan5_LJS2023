@@ -40,12 +40,11 @@ function dodajLisener(){
     }
 }
 
-console.log(button);
 function dodajkvadratice(event) {
     event.preventDefault();
     var broj = document.getElementById("insert").value;
     tip = typeof(broj);
-    console.log("tip je:" + tip);
+
     if(!parseInt(broj)){
         document.getElementById("inputlabel").innerHTML = "Unesite cijeli broj";
     }else{
@@ -55,7 +54,7 @@ function dodajkvadratice(event) {
             items.innerHTML += `<li><input class="unosteksta" type="text" placeholder="unesite text"><button class="ukloni">-</button></li>`;
         }
        plus.style.display = "";
-       button.disabled = true;
+    //    button.disabled = true;
 
         // console.log(plus);
         dodajLisener();
